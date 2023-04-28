@@ -1,38 +1,104 @@
-.App {
+*{
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+  background-color: #c25e0111;
+  max-width: 1100px;
+  min-height:100vh ;
+   margin: 30px auto;
+   border-radius: 20px;
+   padding: 30px;
+}
+h2{
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+font-size: 50px;
+line-height: 1.5px;
+}
+.recipes{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-top: 20px;
+}
+.card{
+  width: 200px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 5px;
+  padding-bottom: 10px;
+}
+.card-image{
+  width: 100%;
+}
+.card-body{
+  padding: 10px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.category{
+  color: rgb(155, 155, 143);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-body > a{
+  padding: 10px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #830f0f;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.card-body > a:hover{
+background-color:#830f0f;
+color: white;
+}
+.home{
+  background-image: url(./assets/foog.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 350px;
+  text-align: center;
+  font-size: 70px;
   color: white;
+  line-height: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.lets{
+  padding-top:70px;
+  font-family: 'Dancing Script', cursive;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.detail{
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: 'Lora', serif;
+  font-weight: 500;
+}
+.cook{
+  font-family: 'Varela Round', sans-serif;
+  font-weight: 800;
+  font-size: 100px;
+  letter-spacing: 10px;
+}
+form{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+input{
+  border: 1px solid #f7f7f7;
+  padding: 10px;
+  font-size: 16px;
+}
+input:focus{
+  outline: none;
+}
+.form-control{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 400px;
+}
+.btn{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  cursor: pointer;
 }
